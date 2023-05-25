@@ -1,149 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
-
-*, body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-html, body {
-    height: 100%;
-    background-color: #152733;
-    overflow: hidden;
-}
-
-
-.form-holder {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      min-height: 100vh;
-}
-
-.form-holder .form-content {
-    position: relative;
-    text-align: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    padding: 60px;
-}
-
-.form-content .form-items {
-    border: 3px solid #fff;
-    padding: 40px;
-    display: inline-block;
-    width: 100%;
-    min-width: 540px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+body{color: #000;overflow-x:hidden;height: 100%;
+    background-color: steelblue;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
+.demo{ font-family: 'Noto Sans', sans-serif; }
+.panel{
+ 
+    padding: 0;
     border-radius: 10px;
-    text-align: left;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    border: none;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.05),0 0 0 10px rgba(0,0,0,0.05);
 }
-
-.form-content h3 {
+.panel .panel-heading{
+    padding: 20px 15px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+.panel .panel-heading .title{
     color: #fff;
-    text-align: left;
     font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 40px;
+    margin: 0;
 }
-
-.form-content h3.form-title {
-    margin-bottom: 30px;
+.panel .panel-heading .btn{
+    color: rgba(255,255,255,0.5);
+    background: transparent;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
 }
-
-.form-content p {
+.panel .panel-heading .btn:hover{
     color: #fff;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 20px;
-    margin-bottom: 30px;
+    text-shadow: 3px 3px rgba(255,255,255,0.2);
 }
-
-
-.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+.panel .panel-heading .form-control{
     color: #fff;
+    background-color: transparent;
+    width: 35%;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
 }
-
-.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
-    width: 100%;
-    padding: 9px 20px;
-    text-align: left;
-    border: 0;
-    outline: 0;
-    border-radius: 6px;
-    background-color: #fff;
-    font-size: 15px;
-    font-weight: 300;
-    color: #8D8D8D;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    margin-top: 16px;
-}
-
-
-.btn-primary{
-    background-color: #6C757D;
+.panel .panel-heading .form-control:focus{
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: none;
     outline: none;
-    border: 0px;
-     box-shadow: none;
 }
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
-    background-color: #495056;
-    outline: none !important;
-    border: none !important;
-     box-shadow: none;
-}
-
-.form-content textarea {
-    position: static !important;
-    width: 100%;
-    padding: 8px 20px;
-    border-radius: 6px;
-    text-align: left;
-    background-color: #fff;
-    border: 0;
+.panel .panel-heading .form-control::placeholder{
+    color: rgba(255,255,255,0.5);
     font-size: 15px;
-    font-weight: 300;
-    color: #8D8D8D;
-    outline: none;
-    resize: none;
-    height: 120px;
-    -webkit-transition: none;
-    transition: none;
-    margin-bottom: 14px;
+    font-weight: 500;
 }
-
-.form-content textarea:hover, .form-content textarea:focus {
-    border: 0;
-    background-color: #ebeff8;
-    color: #8D8D8D;
+.panel .panel-body{ padding: 0; }
+.panel .panel-body .table thead tr th{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none;
 }
-
-.mv-up{
-    margin-top: -9px !important;
-    margin-bottom: 8px !important;
+.panel .panel-body .table tbody tr td{
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 12px;
+    vertical-align: middle;
+    border: none;
 }
-
-.invalid-feedback{
-    color: #ff606e;
+.panel .panel-body .table tbody tr:nth-child(even){ background-color: rgba(255,255,255,0.05); }
+.panel .panel-body .table tbody .action-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
-
-.valid-feedback{
-   color: #2acc80;
+.panel .panel-body .table tbody .action-list li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.panel .panel-body .table tbody .action-list li a{
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.panel .panel-body .table tbody .action-list li a:hover{ text-shadow: 3px 3px 0 rgba(255,255,255,0.3); }
+.panel .panel-body .table tbody .action-list li a:before,
+.panel .panel-body .table tbody .action-list li a:after{
+    content: attr(data-tip);
+    color: #fff;
+    background-color: #111;
+    font-size: 12px;
+    padding: 5px 7px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    display: none;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transition: all 0.3s ease 0s;
+}
+.panel .panel-body .table tbody .action-list li a:after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    border-radius: 0;
+    transform: translateX(-50%) rotate(45deg);
+    top: -18px;
+    z-index: -1;
+}
+.panel .panel-body .table tbody .action-list li a:hover:before,
+.panel .panel-body .table tbody .action-list li a:hover:after{
+    display: block;
+}
+.panel .panel-footer{
+    color: #fff;
+    background-color: transparent;
+    padding: 15px;
+    border: none;
+}
+.panel .panel-footer .col{ line-height: 35px; }
+.pagination{ margin: 0; }
+.pagination li a{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 31px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin: 0 3px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+.pagination li a:hover{
+    color: #fff;
+    background-color: transparent;
+    border-color: rgba(255,255,255,0.2);
+}
+.pagination li a:focus,
+.pagination li.active a,
+.pagination li.active a:hover{
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+.pagination li:first-child a,
+.pagination li:last-child a{
+    border-radius: 50%;
+}
+@media only screen and (max-width:767px){
+    .panel .panel-heading .title{
+        text-align: center;
+        margin: 0 0 10px;
+    }
+    .panel .panel-heading .btn_group{ text-align: center; }
+}
+.glyphicon-fire{
+    font-size: 80px;
 }
